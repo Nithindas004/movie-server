@@ -13,6 +13,11 @@ router.post("/add",async(req,res)=>{
     })
 })
 
+router.get("/view",async(req,res)=>{
+    let data = await movieModel.find()
+    res.json(data)
+})
+
 
 
 
